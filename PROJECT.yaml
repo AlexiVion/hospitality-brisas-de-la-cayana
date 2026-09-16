@@ -1,24 +1,42 @@
 schema_version: 1
-id: REPLACE-ME
-name: REPLACE-ME
-slug: replace-me
+id: DEMO-002
+name: Brisas de la Cayana
+slug: hospitality-brisas-de-la-cayana
 type: business-demo
-domain: replace-me
+domain: hospitality
 areas:
-  - replace-me
+  - cabin-website
+  - hospitality-storytelling
+  - direct-booking
+  - conversion-ux
+  - responsive-web
 status: planning
 visibility: public
 purpose:
-  - portfolio
+  - prospect-demo
+  - commercial-portfolio
+  - capability-proof
   - sales-demo
 stack:
-  - replace-me
+  - nextjs
+  - typescript
+  - tailwindcss
 featured: false
-repository: REPLACE-ME
+repository: https://github.com/AlexiVion/hospitality-brisas-de-la-cayana
 live_demo: null
 owner: AlexiVion
-created: YYYY-MM-DD
-updated: YYYY-MM-DD
+created: 2026-09-16
+updated: 2026-09-16
 topics:
-  - replace-me
-registry: REPLACE-ME
+  - hospitality
+  - cabin
+  - villa-alpina
+  - direct-booking
+  - storytelling
+  - portfolio
+registry: https://github.com/VionWorks/portfolio-registry/blob/main/projects/DEMO-002.yaml
+notes: >-
+  Prospect demo for the real Brisas de la Cayana accommodation in Villa Alpina,
+  Cordoba. This is not presented as paid client work. Permanent public portfolio
+  use of owner-controlled photography, branding, testimonials, and other assets
+  should remain subject to appropriate permission.

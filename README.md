@@ -1,54 +1,115 @@
-# VionWorks Business Demo Template
+# Brisas de la Cayana
 
-Canonical starting point for public concept projects whose primary purpose is to demonstrate that a concrete business problem can be translated into a credible digital experience and implementation.
+**Hospitality Storytelling & Direct-Booking Prospect Demo — DEMO-002**
 
-## Use this template for
+Brisas de la Cayana is a real accommodation in Villa Alpina, Córdoba. This repository contains a prospect demo created to explore how its existing photography, story, location, and booking channels can be transformed into a coherent owned web experience.
 
-- hospitality / direct-booking websites
-- local-service lead generation sites
-- restaurant ordering or reservation concepts
-- real-estate discovery experiences
-- e-commerce concepts
-- industry-specific landing pages and web applications
+> This is not presented as paid client work. The business is real, but the website is currently a proposal/demo. No production booking integration, conversion lift, revenue impact, or client outcome is claimed unless it is later verified and documented.
 
-This family is about **commercial problem solving**, not technical novelty.
+## Project objective
 
-## Required first steps
+Create a high-quality hospitality website that does more than list amenities. The experience should tell the story of the place, help visitors imagine themselves there, answer practical questions honestly, and guide them toward a direct availability enquiry.
 
-1. Replace every `REPLACE-ME` value in `PROJECT.yaml`.
-2. Register the project in `VionWorks/portfolio-registry` and allocate its permanent `DEMO-###` ID.
-3. Complete `docs/BRIEF.md` before implementation.
-4. Define the user journey in `docs/UX.md`.
-5. Establish the visual direction before polishing UI.
-6. Keep implementation boundaries explicit, especially when a real deployment would connect to third-party business systems.
-7. Finish with an honest `docs/CASE-STUDY.md` suitable for Upwork, GitHub, or a portfolio site.
-
-## Documentation structure
+The intended emotional sequence is:
 
 ```text
-docs/
-├── BRIEF.md
-├── UX.md
-├── VISUAL-DIRECTION.md
-├── IMPLEMENTATION.md
-└── CASE-STUDY.md
+arrive
+  -> discover
+  -> imagine
+  -> understand the cabin
+  -> experience the place
+  -> know the story
+  -> trust
+  -> enquire
 ```
 
-Application folders such as `app/`, `components/`, `public/`, `src/`, or framework-specific directories should be added by the project rather than hard-coded into the template.
+## Core positioning
 
-## Portfolio standard
+Brisas should not feel like a generic cabin listing or a luxury-hotel template.
 
-A Business Demo should make it possible for a prospective client to understand, quickly:
+The visual and verbal direction is:
 
-- what kind of business this is for
-- what commercial problem is being solved
-- what the primary user journey is
-- what was actually designed and built
-- what would connect to existing business infrastructure in production
-- what the live experience looks and feels like
+- editorial
+- natural
+- warm
+- quiet
+- authentic
+- mountain-led rather than building-led
 
-Concept projects must be labeled honestly. Do not invent clients, testimonials, revenue, conversion lifts, or production integrations that did not happen.
+The landscape, creek, weather, horses, paths, wood, mist, sun, and changing sky are part of the product rather than background decoration.
+
+## Primary conversion
+
+The first version is designed around **direct availability enquiries**.
+
+The visitor chooses:
+
+- arrival date
+- departure date
+- guest count
+
+The interface then prepares a WhatsApp enquiry with those details. Booking.com and Airbnb remain secondary alternatives rather than the main CTA.
+
+## Proposed page structure
+
+The first release is intentionally focused around one long-form storytelling landing page:
+
+```text
+Hero
+  -> A place to slow down
+  -> Your refuge in the sierras
+  -> Here you come to...
+  -> Or do nothing at all
+  -> The story of Brisas
+  -> Everything you need
+  -> Before you arrive
+  -> Gallery
+  -> Location
+  -> Real reviews / trust
+  -> Availability enquiry
+```
+
+## Integration boundary
+
+The demo does **not** pretend to provide:
+
+- live inventory
+- payment processing
+- confirmed reservations
+- PMS synchronization
+- OTA synchronization
+- a channel manager
+
+If the accommodation already uses a booking engine, PMS, channel manager, or calendar synchronization layer, the production version can connect to that system after it is identified and validated.
+
+## Planned stack
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- owner-provided / approved photography
+- deployment on ClickDialog infrastructure
+- intended demo URL: `brisas-de-la-cayana.clickdialog.site`
+
+## Documentation
+
+- [`docs/BRIEF.md`](docs/BRIEF.md) — business problem, audience, objectives, scope and non-goals
+- [`docs/UX.md`](docs/UX.md) — narrative journey, conversion logic and booking boundary
+- [`docs/VISUAL-DIRECTION.md`](docs/VISUAL-DIRECTION.md) — visual system and art direction
+- [`docs/PHOTO-DIRECTION.md`](docs/PHOTO-DIRECTION.md) — image roles and curation rules
+- [`docs/COPY.md`](docs/COPY.md) — first-pass website copy
+- [`docs/WIREFRAME.md`](docs/WIREFRAME.md) — section-by-section content architecture
+- [`docs/IMPLEMENTATION.md`](docs/IMPLEMENTATION.md) — technical plan and deployment boundary
+- [`docs/CASE-STUDY.md`](docs/CASE-STUDY.md) — honest portfolio narrative
+
+## Project status
+
+`planning`
+
+The planning phase is complete when the narrative, copy, image roles, UX and implementation boundaries are stable enough to build without repeatedly redefining the product.
 
 ## Registry
 
-Canonical taxonomy and metadata rules live in [VionWorks/portfolio-registry](https://github.com/VionWorks/portfolio-registry).
+Permanent project ID: **DEMO-002**
+
+Canonical metadata: [VionWorks Portfolio Registry](https://github.com/VionWorks/portfolio-registry/blob/main/projects/DEMO-002.yaml)
