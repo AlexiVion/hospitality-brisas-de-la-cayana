@@ -50,24 +50,32 @@ The visitor chooses:
 
 The interface then prepares a WhatsApp enquiry with those details. Booking.com and Airbnb remain secondary alternatives rather than the main CTA.
 
-## Proposed page structure
+## Implemented page structure
 
-The first release is intentionally focused around one long-form storytelling landing page:
+The first release is a long-form storytelling landing page:
 
 ```text
 Hero
   -> A place to slow down
+  -> Arrival / road transition
   -> Your refuge in the sierras
   -> Here you come to...
   -> Or do nothing at all
   -> The story of Brisas
   -> Everything you need
   -> Before you arrive
-  -> Gallery
+  -> Editorial gallery
   -> Location
-  -> Real reviews / trust
+  -> External trust channels
   -> Availability enquiry
+  -> Closing chapter
 ```
+
+## Current visual state
+
+The complete responsive layout and visual system are implemented, but original high-resolution owner photography has not yet been added to the repository.
+
+The current build therefore uses intentional editorial photo placeholders that preserve the planned crops, proportions and narrative roles. These placeholders are temporary and should be replaced with approved original photographs before the demo is treated as visually final.
 
 ## Integration boundary
 
@@ -82,13 +90,16 @@ The demo does **not** pretend to provide:
 
 If the accommodation already uses a booking engine, PMS, channel manager, or calendar synchronization layer, the production version can connect to that system after it is identified and validated.
 
-## Planned stack
+## Implemented stack
 
-- Next.js
+- Next.js 16
+- React 19
 - TypeScript
-- Tailwind CSS
-- owner-provided / approved photography
-- deployment on ClickDialog infrastructure
+- Tailwind CSS 4 / custom editorial CSS
+- structured WhatsApp availability flow
+- responsive mobile / tablet / desktop layouts
+- GitHub Actions production-build verification
+- deployment target: ClickDialog infrastructure
 - intended demo URL: `brisas-de-la-cayana.clickdialog.site`
 
 ## Documentation
@@ -102,11 +113,25 @@ If the accommodation already uses a booking engine, PMS, channel manager, or cal
 - [`docs/IMPLEMENTATION.md`](docs/IMPLEMENTATION.md) — technical plan and deployment boundary
 - [`docs/CASE-STUDY.md`](docs/CASE-STUDY.md) — honest portfolio narrative
 
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Production build:
+
+```bash
+npm run build
+npm run start
+```
+
 ## Project status
 
-`planning`
+`building`
 
-The planning phase is complete when the narrative, copy, image roles, UX and implementation boundaries are stable enough to build without repeatedly redefining the product.
+The site structure, responsive system, storytelling flow and direct WhatsApp conversion are implemented. The main remaining visual dependency is the approved original photography, followed by browser QA, deployment and final portfolio evidence.
 
 ## Registry
 
