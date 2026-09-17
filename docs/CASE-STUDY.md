@@ -43,27 +43,27 @@ This influenced copy, photography selection, layout, conversion timing and techn
 
 ## Solution
 
-The proposed experience is a long-form, photo-led landing page combining:
+The implemented first version is a long-form hospitality landing page combining:
 
 - landscape-led hero
 - editorial storytelling
 - cabin overview
 - activity and stillness chapters
 - host / origin story
-- verified amenities
+- verified / conservative amenity presentation
 - practical arrival guidance
-- curated photography
+- editorial gallery architecture
 - location context
-- attributable trust signals
+- external trust channels
 - direct availability enquiry
 
 The primary conversion is a structured WhatsApp enquiry containing dates and guest count.
 
 Airbnb and Booking.com remain available as secondary options rather than becoming the site's main destination.
 
-## What I built / am building
+## What I built
 
-Planning and design artifacts:
+Planning and design:
 
 - commercial brief
 - narrative UX strategy
@@ -75,15 +75,27 @@ Planning and design artifacts:
 - booking-integration boundary
 - portfolio metadata and registry entry
 
-Implementation target:
+Implemented frontend:
 
-- responsive Next.js website
-- TypeScript
-- Tailwind CSS
-- optimized real-property photography
-- WhatsApp availability flow
-- OTA / social / map links
-- ClickDialog-hosted live demo
+- responsive Next.js 16 landing page
+- React 19 + TypeScript
+- Tailwind CSS 4 / custom editorial CSS
+- mobile, tablet and desktop layouts
+- structured WhatsApp availability form
+- date and guest validation
+- Airbnb / Booking.com / Instagram / Google Maps secondary links
+- mobile sticky conversion CTA
+- semantic page structure
+- reduced-motion support
+- production-build GitHub Actions workflow
+
+## Photography status
+
+The final original high-resolution owner photography has not yet been committed to the project.
+
+The current build uses deliberate editorial placeholders that preserve the intended crops, proportions and narrative roles. They are implementation scaffolding, not fabricated representations of the real property.
+
+The placeholders must be replaced with approved original Brisas photographs before the demo is considered visually final.
 
 ## Integration philosophy
 
@@ -95,7 +107,7 @@ The first conversion endpoint is WhatsApp. If a real booking system is identifie
 
 ## Role
 
-Work performed / planned in this project:
+Work performed in the project to date:
 
 - business analysis
 - hospitality positioning
@@ -104,22 +116,27 @@ Work performed / planned in this project:
 - conversion strategy
 - copywriting
 - visual direction
-- photo curation
+- photo curation planning
 - wireframing
 - frontend implementation
 - integration design
-- responsive QA
-- deployment
+- build verification
+
+Pending:
+
+- original-asset integration
+- in-browser visual QA with real photography
+- live deployment
+- final screenshot production
 
 ## Technology
 
-Planned / used:
-
-- Next.js
+- Next.js 16
+- React 19
 - TypeScript
-- Tailwind CSS
-- GitHub
-- ClickDialog deployment infrastructure
+- Tailwind CSS 4
+- GitHub Actions
+- planned ClickDialog deployment infrastructure
 
 ## Evidence
 
@@ -137,19 +154,17 @@ Intended demo URL:
 
 The live URL should not be cited as evidence until it is actually deployed and verified.
 
+Verified engineering evidence:
+
+- initial implementation merged to `main`
+- repository production build workflow completed successfully
+
 ## Outcome
 
-Current status: **planning**.
+Current status: **building**.
 
-At this stage, the project demonstrates the ability to translate a real hospitality business and its existing assets into a specific narrative, UX and implementation plan.
+The project now demonstrates the complete translation of a real hospitality prospect into a specific business brief, narrative system, responsive frontend and direct-contact conversion flow.
 
-After implementation, this section should be updated with verifiable evidence such as:
-
-- live demo
-- screenshots
-- responsive views
-- production build results
-- accessibility / performance checks
-- owner feedback if permission exists to quote it
+The main remaining dependency for a visually final demo is the approved original photography. After those assets are integrated, the project should move through browser/responsive QA and deployment before being marked `published`.
 
 Do not claim conversion improvements, bookings, revenue or client satisfaction without evidence.
